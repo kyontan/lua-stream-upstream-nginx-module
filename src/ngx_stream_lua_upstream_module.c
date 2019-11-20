@@ -81,7 +81,7 @@ ngx_stream_lua_upstream_init(ngx_conf_t *cf)
 static int
 ngx_stream_lua_upstream_create_module(lua_State * L)
 {
-    lua_createtable(L, 0, 6);
+    lua_createtable(L, 0, 5);
 
     lua_pushcfunction(L, ngx_stream_lua_upstream_get_upstreams);
     lua_setfield(L, -2, "get_upstreams");
